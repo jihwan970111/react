@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './Menu.module.css';
 import { HiOutlineComputerDesktop } from "react-icons/hi2";

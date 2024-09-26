@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Menu from '../components/Menu';
 import styles from './Works.module.css';
 import MyItem from '../components/MyItem';
 import { MdOutlineChangeCircle } from "react-icons/md";

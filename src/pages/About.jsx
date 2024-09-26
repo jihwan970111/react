@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Menu from '../components/Menu';
 import workStyles from './Works.module.css';
 import { IoPersonCircleOutline } from "react-icons/io5";
 import styles from './About.module.css';

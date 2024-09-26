@@ -1,5 +1,4 @@
 import React from 'react';
-import Menu from '../components/Menu';
 import { IoHomeOutline } from "react-icons/io5";
 import workStyles from './Works.module.css';
 import useUsernameStore from '../store';

@@ -1,0 +1,23 @@
+.btn {
+    background-color: #0088ff;
+    border: none;
+    color: white;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50px;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    width: 580px;
+}

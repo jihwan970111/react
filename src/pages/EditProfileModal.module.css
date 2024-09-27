@@ -67,6 +67,11 @@
     color: white;
 }
 
+.deleteButton {
+    background-color: grey;
+    color: white;
+}
+
 .cancelButton {
     background-color: #333;
     color: white;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styles from './EditProfileModal.module.css';
 
-export default function EditProfileModal({ profile, closeModal, updateProfile }) {
+export default function EditProfileModal({ profile, closeModal, updateProfile, deleteProfile }) {
     const [name, setName] = useState(profile.name);
     const [image, setImage] = useState(profile.image);
 
@@ -25,6 +25,11 @@ export default function EditProfileModal({ profile, closeModal, updateProfile })
         };
         updateProfile(updatedProfile);
     };
+
+    const handleDelete = () => {
+        deleteProfile(profile.id); // 삭제할 프로필의 id를 전달하여 처리
+    };
+
     return (
         <div className={styles.modalOverlay}>
             <div className={styles.modalContent}>
@@ -44,6 +49,7 @@ export default function EditProfileModal({ profile, closeModal, updateProfile })
                 />
                 <div className={styles.actions}>
                     <button className={styles.saveButton} onClick={handleSave}>저장</button>
+                    <button className={styles.deleteButton} onClick={handleDelete}>프로필 삭제</button>
                     <button className={styles.cancelButton} onClick={closeModal}>취소</button>
                 </div>
             </div>

@@ -72,9 +72,15 @@ export default function Profiles() {
         closeEditModal(); // 수정 모달 닫기
     };
 
+    // 프로필 삭제 함수
+    const deleteProfile = (id) => {
+        setProfiles(profiles.filter((profile) => profile.id !== id)); // 해당 프로필 제거
+        closeEditModal(); // 모달 닫기
+    };
+
     return (
         <div className={styles.everything}>
-            <h1 className={styles.title}>넷플릭스를 시청할 프로필을 선택하세요.</h1>
+            <h1 className={styles.title}>{isEditMode ? '프로필 관리' : '넷플릭스를 시청할 프로필을 선택하세요.'}</h1>
             <div className={styles.profileList}>
                 {profiles.map((profile) => (
                     <Profile 
@@ -99,6 +105,7 @@ export default function Profiles() {
                     closeModal={closeEditModal}
                     profile={selectedProfile}
                     updateProfile={updateProfile}
+                    deleteProfile={deleteProfile}
                 />
             )}
         </div>

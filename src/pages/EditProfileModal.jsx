@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './EditProfileModal.module.css';
+import { MdModeEdit } from "react-icons/md";
 
 export default function EditProfileModal({ profile, closeModal, updateProfile, deleteProfile }) {
     const [name, setName] = useState(profile.name);
@@ -37,8 +38,13 @@ export default function EditProfileModal({ profile, closeModal, updateProfile, d
                 <div className={styles.profileImageContainer}>
                     <img src={image} alt="프로필 이미지" className={styles.profileImage} />
                     <label className={styles.uploadButton}>
-                        <input type="file" accept="image/*" onChange={handleImageChange} />
-                        이미지 변경
+                        <input
+                            type="file"
+                            accept="image/*"
+                            onChange={handleImageChange}
+                            className={styles.hiddenFileInput}
+                        />
+                        <MdModeEdit className={styles.editIcon}/>
                     </label>
                 </div>
                 <input

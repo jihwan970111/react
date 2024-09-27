@@ -21,9 +21,8 @@
 }
 
 .profileImageContainer {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    position: relative; /* 컨테이너를 기준으로 아이콘 위치 설정 */
+    display: inline-block; /* 이미지 크기에 맞추어 컨테이너 크기를 조정 */
 }
 
 .profileImage {
@@ -35,8 +34,24 @@
 
 .uploadButton {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px; /* 이미지 하단과 간격 조정 */
+    left: 5px; /* 이미지 왼쪽과 간격 조정 */
+    cursor: pointer;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.hiddenFileInput {
+    display: none;
+}
+
+.profileImage.editIcon {
+    font-size: 24px;
+    color: white;
+    background-color: gray;
+    padding: 5px;
+    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -56,7 +71,7 @@
     margin-top: 20px;
 }
 
-.saveButton, .cancelButton {
+.saveButton, .deleteButton, .cancelButton {
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
@@ -68,7 +83,7 @@
 }
 
 .deleteButton {
-    background-color: grey;
+    background-color: #333;
     color: white;
 }
 

@@ -1,18 +1,14 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Works from "./pages/Works";
-import Test from "./pages/Test";
+import Login from "./pages/Login";
+import Profiles from "./pages/Profiles";
 
 const MyRouter = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="works" element={<Works />} />
-        <Route path="Test" element={<Test />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/profile" element={<Profiles />} />
       </Routes>
     </BrowserRouter>
   );

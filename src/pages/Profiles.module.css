@@ -1,0 +1,64 @@
+.everything {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 20px;  
+    height: 100vh;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.profileList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.profileName {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.addProfile {
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.addIcon {
+    font-size: 30px;
+    color: gray;
+}
+
+.manageButton {
+    margin-top: 70px;
+    padding: 10px 30px;
+    background-color: black;
+    border: groove;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}

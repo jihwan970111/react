@@ -1,5 +1,5 @@
 .btn {
-    background-color: #0088ff;
+    /* background-color: #0088ff; */
     border: none;
     color: white;
     font-size: 30px;
@@ -12,6 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.btn img {
+    height: 50px;
+    width: 180px;
+    padding: 10px;
 }
 
 .container {

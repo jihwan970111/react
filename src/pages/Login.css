@@ -1,0 +1,113 @@
+.login-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/bfc0fc46-24f6-4d70-85b3-7799315c01dd/web/KR-ko-20240923-TRIFECTA-perspective_85b3aa87-9cb0-43a1-b0a0-7b5ba5b99198_medium.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo-container {
+  position: absolute;
+  top: 5px;
+  left: 382px;
+}
+
+.netflix-logo {
+  width: 210px;
+  height: auto;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+
+.floating-label {
+  position: absolute;
+  left: 40px;
+  font-size: 16px;
+  color: #999;
+  pointer-events: none;
+  transition: 0.2s ease all;
+  transform: translateY(-50%);
+}
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  width: 400px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* 기본 input 스타일 */
+.input-group input {
+  background-color: rgba(57, 61, 80, 0.75);
+  color: white;
+  width: 80%;
+  height: 40px;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 3px;
+  outline: none; /* 기본 outline 제거 */
+  transition: background-color 0.2s ease;
+}
+
+.input-group input:-webkit-autofill{
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(57, 61, 80, 0.75) inset;
+    box-shadow: 0 0 0px 1000px rgba(57, 61, 80, 0.75) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+/* 비어 있을 때 라벨을 중앙에 배치 */
+.floating-label {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #999;
+} 
+
+/* 포커스 상태이거나 값이 입력되었을 때 라벨을 위로 올림 */
+.floating-label.filled {
+  top: -10px;
+  font-size: 12px;
+  color: #999; /* 라벨 강조 색상 */
+}
+
+.login-btn {
+  width: 85%;
+  padding: 10px;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.signup-link {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

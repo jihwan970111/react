@@ -18,6 +18,7 @@ function Login() {
         if (email === adminUserInfo.id && password === adminUserInfo.pw) {
             updateUsername('xdragonball6');
             alert('로그인 되었습니다!');
+            console.log(username);
             navigate('/profile');
         } else {
             alert('Wrong ID or PW');

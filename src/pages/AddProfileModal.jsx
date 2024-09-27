@@ -49,16 +49,11 @@ export default function AddProfileModal({ closeModal, saveProfile }) {
                         <label>키즈 프로필</label>
                         <span>어린이용 시리즈와 영화만 표시</span>
                         <label className={styles.switch}> 
-                            {/*레이블 내부에는 type=“checkbox"를 가진 <input> 요소가 있다 */}
-                            {/*사용자가 상호 작용할 수 있는 실제 체크박스 입력 컨트롤러 */}
                             <input 
                                 type="checkbox" 
                                 checked={isKidsProfile} 
                                 onChange={() => setIsKidsProfile(!isKidsProfile)} 
                             />
-                            {/*<span class=“slider”> “slider” 클래스를 가진 <span> 요소는 토글 스위치의 시각적 모습을 나타낸다. */}
-                            {/*이 부분은 사용자가 체크박스의 상태를 클릭하여 조작할 수 있다. */}
-                            {/*이 요소는 체크박스가 선택된 경우 “활성화” 위치를 나타내기 위해 시각적으로 왼쪽에서 오른쪽으로 슬라이드 된다. */}
                             <span className={styles.slider}></span>
                         </label>
                     </div>

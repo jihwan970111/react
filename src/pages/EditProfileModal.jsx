@@ -7,7 +7,7 @@ export default function EditProfileModal({ profile, closeModal, updateProfile })
 
     // 이미지 선택 핸들러
     const handleImageChange = (e) => {
-        {/*file로 받아오기 위해 FileReader를 선언*/}
+        //file로 받아오기 위해 FileReader를 선언
         const file = e.target.files[0];
         if (file) {
             const reader = new FileReader();

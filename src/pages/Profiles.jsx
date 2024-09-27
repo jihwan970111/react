@@ -83,7 +83,6 @@ export default function Profiles() {
                         onClick={() => openEditModal(profile)} // 관리 모드일 때만 수정 모달 열기
                     />
                 ))}
-                {/* 프로필 추가 버튼(모달창으로 구현) */}
                 <div className={styles.addProfileContainer}>
                     <button className={styles.addProfile} onClick={openAddModal}>
                         <span className={styles.addIcon}>+</span>
@@ -91,15 +90,10 @@ export default function Profiles() {
                     <span className={styles.addText}>프로필 추가</span>
                 </div>
             </div>
-            {/* 프로필 관리 버튼 */}
             <button className={styles.manageButton} onClick={toggleEditMode}>
                 {isEditMode ? '완료' : '프로필 관리'}
             </button>
-
-            {/* 프로필 추가 모달(모달창으로 구현) */}
             {isAddModalOpen && <AddProfileModal closeModal={closeAddModal} saveProfile={saveProfile} />}
-
-            {/* 프로필 수정 모달(모달창으로 구현) */}
             {isEditModalOpen && (
                 <EditProfileModal
                     closeModal={closeEditModal}

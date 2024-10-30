@@ -1,13 +1,9 @@
-# JAVA_Swing_React_Project
+# React_Project
 제작 기간 - (2024-09-26 ~ 2024-09-27)
-------
-<img src="https://drive.google.com/file/d/1jSraTsCM7XjBIhzRFXkYkPKnlpY0WJ7M/view?usp=sharing" alt="cover" style="max-width: 100%;"></a>
 ----
 ### 해당 사이트로 가보기
-<a href="https://singular-sunflower-4e1351.netlify.app/" title="사이트로 이동" rel="nofollow"><img src="https://drive.google.com/file/d/1jSraTsCM7XjBIhzRFXkYkPKnlpY0WJ7M/view?usp=sharing" alt="cover" style="max-width: 10%;"></a>
-
+<a href="https://singular-sunflower-4e1351.netlify.app/" title="사이트로 이동" rel="nofollow"><img src="https://github.com/jihwan970111/react/blob/main/Netflix%20Clone%20Coding.png" alt="cover" style="max-width: 10%;"></a>
 ---
-
 #### 기능설명
 - 로그인
 - 사용자 등록/수정/삭제하기

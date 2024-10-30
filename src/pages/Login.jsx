@@ -69,7 +69,7 @@ function Login() {
                     <button type="submit" className="login-btn">로그인</button>
                 </form>
                 <div className="signup-link">
-                    Netflix 회원이 아닌가요? <a href="http://localhost:3000/">지금 가입하세요.</a>
+                    Netflix 회원이 아닌가요? <a href="#">지금 가입하세요.</a>
                 </div>
             </div>
         </div>
